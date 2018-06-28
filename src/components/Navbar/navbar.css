@@ -1,0 +1,46 @@
+nav {
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding:10px;
+  border-bottom:1px solid lightgray;
+  background-color: #0C2C52;
+  color:white;
+}
+
+.nav-title{
+  font-size:1.5em;
+}
+
+.nav-link{
+  padding:10px;
+  border:1px solid white;
+  border-radius:5px;
+}
+
+.nav-link:hover{
+  animation:navLinkHover .5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes navLinkHover {
+  0% {
+    border:1px solid white;
+  }
+
+  100% {
+    background-color:#DCF0F7;
+    color:black;
+  }
+
+}
+
+a {
+  text-decoration: none;
+  padding:10px;
+}
+
+a:visited{
+  color:inherit;
+}
